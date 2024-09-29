@@ -2,16 +2,16 @@
 
 namespace OOP.Animals.Concrete
 {
-    class Kartal : FlyingAnimals
+    class Papagan : FlyingAnimals
     {
         public override void MakeNoise()
         {
-            Console.WriteLine("Kartal: Ciyak!");
+            Console.WriteLine("Papagan: hi my friend!");
         }
 
         public override void Fly()
         {
-            Console.WriteLine("Kartal uçuyor.");
+            Console.WriteLine("Papaan uçuyor.");
         }
     }
 }
