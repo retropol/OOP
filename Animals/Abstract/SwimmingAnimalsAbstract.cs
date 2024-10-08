@@ -7,6 +7,7 @@
 
     abstract class SwimmingAnimals : Animal, ICanSwim
     {
+        public int yuzmeninEnerjiSeviyesi = 1;
         public abstract void Swim();
     }
 }

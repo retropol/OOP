@@ -5,6 +5,15 @@ namespace OOP.Animals.Concrete
     class Lion : LandAnimals
     {
 
+        private int _enerjiseviyesi = 10;
+
+        public int Enerjiseviyesi
+        {
+
+            get => _enerjiseviyesi;
+            set => _enerjiseviyesi = value;
+        }
+
         public override void MakeNoise()
         {
             Console.WriteLine("VOAARR");
@@ -12,7 +21,13 @@ namespace OOP.Animals.Concrete
         }
         public override void Run()
         {
-            Console.WriteLine("Aslan Koşuyor");
+            if (_enerjiseviyesi >= kosmaninEnerjiSeviyesi)
+            {
+
+                _enerjiseviyesi -= kosmaninEnerjiSeviyesi;
+                Console.WriteLine("Balık gibi yüzüyorum");
+            }
+            else { Console.WriteLine("Yüzmek için enerjin yok"); }
         }
     }
 

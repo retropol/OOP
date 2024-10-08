@@ -4,6 +4,13 @@ namespace OOP.Animals.Concrete
 {
     class Fish : SwimmingAnimals
     {
+        private int _enerjiseviyesi = 10;
+        
+        public int Enerjiseviyesi { 
+
+            get => _enerjiseviyesi; 
+            set => _enerjiseviyesi = value; }
+
 
         public override void MakeNoise()
         {
@@ -11,7 +18,14 @@ namespace OOP.Animals.Concrete
         }
         public override void Swim()
         {
-            Console.WriteLine("Balık gibi yüzüyorum");
+            if (_enerjiseviyesi >= yuzmeninEnerjiSeviyesi)
+            {
+
+                _enerjiseviyesi -= yuzmeninEnerjiSeviyesi;
+                Console.WriteLine("Balık gibi yüzüyorum");
+            }
+            else { Console.WriteLine("Yüzmek için enerjin yok"); }
+           
         }
     }
 }
