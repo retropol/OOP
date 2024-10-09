@@ -8,9 +8,10 @@ namespace OOP.Environments.Concrete
         public Ocean() : base("Ocean", "Tropical")
         {
         }
+
         public override void DisplayInfo()
         {
-
+            Console.WriteLine($"Environment: {Name}, Climate: {Climate}");
         }
     }
 }

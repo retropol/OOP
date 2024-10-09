@@ -13,8 +13,7 @@ namespace OOP.Animals.Concrete
 
         public override void Eat()
         {
-           
-
+            Console.WriteLine($"{Name} is eating in {Environment.Name}.");
         }
 
 

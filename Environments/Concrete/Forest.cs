@@ -8,10 +8,10 @@ namespace OOP.Environments.Concrete
         public Forest() : base("Forest", "Temperate")
         {
         }
-
         public override void DisplayInfo()
         {
-
+            Console.WriteLine($"Environment: {Name}, Climate: {Climate}");
         }
+
     }
 }

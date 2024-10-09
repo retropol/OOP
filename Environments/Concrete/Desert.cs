@@ -9,10 +9,10 @@ namespace OOP.Environments.Concrete
         {
         }
 
-
         public override void DisplayInfo()
         {
-           
+            Console.WriteLine($"Environment: {Name}, Climate: {Climate}");
         }
+
     }
 }
