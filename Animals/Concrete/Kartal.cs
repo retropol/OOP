@@ -30,6 +30,10 @@ namespace OOP.Animals.Concrete
             else { Console.WriteLine("Yüzmek için enerjin yok"); }
         }
 
+        public override void Eat()
+        {
+
+        }
     }
 
 }

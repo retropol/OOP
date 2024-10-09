@@ -1,5 +1,5 @@
 ﻿using OOP.Animals.Abstract;
-
+using OOP.Environments.Abstract;
 namespace OOP.Animals.Concrete
 {
     class Fish : SwimmingAnimals
@@ -10,6 +10,13 @@ namespace OOP.Animals.Concrete
 
             get => _enerjiseviyesi; 
             set => _enerjiseviyesi = value; }
+
+        public override void Eat()
+        {
+           
+
+        }
+
 
 
         public override void MakeNoise()

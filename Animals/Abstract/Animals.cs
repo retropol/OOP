@@ -1,10 +1,18 @@
-﻿namespace OOP.Animals.Abstract
+﻿using OOP.Environments.Abstract;
+
+namespace OOP.Animals.Abstract
 {
     abstract class Animal
     {
         private string _name;
+        private int _age;
 
-        private int _age; 
+        protected WorldEnvironment Environment;
+
+        public void SetEnvironment(WorldEnvironment environment)
+        {
+            Environment = environment;
+        }
 
         public string Name
         {
@@ -18,8 +26,9 @@
             set => _age = value;
         }
 
+     
         public abstract void MakeNoise();
-        //public abstract void Eat();
+        public abstract void Eat();
     }
 }
 
